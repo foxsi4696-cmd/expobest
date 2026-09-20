@@ -1,0 +1,293 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Администратор Expobest",
+      "login": "admin",
+      "email": "admin@expobest.kz",
+      "password": "Admin123!",
+      "role": "Admin",
+      "blocked": false,
+      "token": "ae30f460-6878-4473-a43d-be27acca8338"
+    },
+    {
+      "id": 2,
+      "name": "Аян Редактор",
+      "login": "ayan",
+      "email": "editor@expobest.kz",
+      "password": "Editor123!",
+      "role": "Editor",
+      "blocked": false,
+      "token": "2451c346-8767-45c3-90ed-ba6c080bc116"
+    }
+  ],
+  "cities": [
+    {
+      "id": 1,
+      "name": "Алматы",
+      "status": "Published"
+    },
+    {
+      "id": 2,
+      "name": "Астана",
+      "status": "Published"
+    },
+    {
+      "id": 3,
+      "name": "Шымкент",
+      "status": "Published"
+    },
+    {
+      "id": 4,
+      "name": "Караганда",
+      "status": "Published"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "IT",
+      "status": "Published"
+    },
+    {
+      "id": 2,
+      "name": "Образование",
+      "status": "Published"
+    },
+    {
+      "id": 3,
+      "name": "Финансы",
+      "status": "Published"
+    },
+    {
+      "id": 4,
+      "name": "Маркетинг",
+      "status": "Published"
+    },
+    {
+      "id": 5,
+      "name": "Стартапы",
+      "status": "Published"
+    }
+  ],
+  "companies": [
+    {
+      "id": 101,
+      "name": "KnewIT",
+      "slug": "knewit",
+      "category": "IT",
+      "city": "Алматы",
+      "description": "Разрабатываем цифровые продукты и обучаем будущих IT-специалистов.",
+      "type": "regular",
+      "status": "Published",
+      "address": "пр. Абая, 10",
+      "phone": "+7 700 111 22 33",
+      "email": "hello@knewit.kz",
+      "website": "https://knewit.kz",
+      "author": "Администратор Expobest"
+    },
+    {
+      "id": 102,
+      "name": "Qadam Studio",
+      "slug": "qadam-studio",
+      "category": "Маркетинг",
+      "city": "Астана",
+      "description": "Студенческое креативное агентство для смелых брендов.",
+      "type": "student",
+      "status": "Published",
+      "phone": "+7 701 222 33 44",
+      "email": "team@qadam.kz",
+      "author": "Аян Редактор"
+    },
+    {
+      "id": 103,
+      "name": "Finway",
+      "slug": "finway",
+      "category": "Финансы",
+      "city": "Алматы",
+      "description": "Финансовые сервисы для малого бизнеса.",
+      "type": "regular",
+      "status": "Published",
+      "phone": "+7 777 333 44 55",
+      "author": "Администратор Expobest"
+    }
+  ],
+  "products": [
+    {
+      "id": 201,
+      "name": "Курс Python с нуля",
+      "slug": "python-course",
+      "company": "KnewIT",
+      "category": "Образование",
+      "city": "Алматы",
+      "price": 49000,
+      "description": "Практический курс с ментором и портфолио.",
+      "type": "regular",
+      "status": "Published"
+    },
+    {
+      "id": 202,
+      "name": "EcoBottle",
+      "slug": "ecobottle",
+      "company": "Qadam Studio",
+      "category": "Стартапы",
+      "city": "Астана",
+      "price": 6500,
+      "description": "Многоразовая бутылка с современным дизайном.",
+      "type": "student",
+      "status": "Published"
+    }
+  ],
+  "services": [
+    {
+      "id": 301,
+      "name": "Разработка сайта",
+      "company": "KnewIT",
+      "category": "IT",
+      "city": "Алматы",
+      "price": 250000,
+      "description": "Сайты и личные кабинеты для растущего бизнеса.",
+      "status": "Published"
+    },
+    {
+      "id": 302,
+      "name": "Брендинг стартапа",
+      "company": "Qadam Studio",
+      "category": "Маркетинг",
+      "city": "Астана",
+      "price": "Договорная",
+      "description": "Айдентика, стратегия и упаковка проекта.",
+      "status": "Published"
+    }
+  ],
+  "students": [
+    {
+      "id": 401,
+      "name": "Алибек Нур",
+      "slug": "alibek-nur",
+      "university": "Satbayev University",
+      "specialty": "Computer Science",
+      "course": 3,
+      "city": "Алматы",
+      "skills": "Python, React, SQL",
+      "status": "Ищу стажировку",
+      "about": "Начинающий full-stack разработчик.",
+      "email": "alibek@example.kz"
+    },
+    {
+      "id": 402,
+      "name": "Айша Сеит",
+      "slug": "aisha-seit",
+      "university": "Astana IT University",
+      "specialty": "Marketing",
+      "course": 4,
+      "city": "Астана",
+      "skills": "SMM, Figma, Analytics",
+      "status": "Ищу работу",
+      "about": "Маркетолог с опытом студенческих проектов."
+    }
+  ],
+  "universities": [
+    {
+      "id": 501,
+      "name": "Satbayev University",
+      "slug": "satbayev-university",
+      "city": "Алматы",
+      "description": "Технический университет с сильным инженерным сообществом.",
+      "website": "https://satbayev.university"
+    },
+    {
+      "id": 502,
+      "name": "Astana IT University",
+      "slug": "astana-it-university",
+      "city": "Астана",
+      "description": "Современный университет цифровых технологий.",
+      "website": "https://astanait.edu.kz"
+    }
+  ],
+  "articles": [
+    {
+      "id": 601,
+      "title": "Как запустить стартап в Казахстане",
+      "slug": "kak-zapustit-startup",
+      "category": "Стартапы",
+      "excerpt": "Первые шаги от идеи до проверки гипотезы.",
+      "content": "Начните с проблемы пользователя, соберите обратную связь и создайте небольшой MVP.",
+      "author": "Аян Редактор",
+      "date": "2026-09-10",
+      "status": "Published"
+    },
+    {
+      "id": 602,
+      "title": "Портфолио, которое замечают работодатели",
+      "slug": "portfolio",
+      "category": "Карьера",
+      "excerpt": "Что показать в портфолио молодому специалисту.",
+      "content": "Выберите 3-5 проектов и подробно расскажите о своей роли.",
+      "author": "Администратор Expobest",
+      "date": "2026-09-08",
+      "status": "Published"
+    }
+  ],
+  "pages": [
+    {
+      "id": 701,
+      "title": "О нас",
+      "slug": "about",
+      "description": "Expobest объединяет бизнес и студентов.",
+      "content": "Мы создаём пространство возможностей.",
+      "status": "Published"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 801,
+      "name": "Динара",
+      "email": "dinara@example.kz",
+      "text": "Нашли отличного стажёра через каталог студентов.",
+      "rating": 5,
+      "status": "Approved",
+      "createdAt": "2026-09-12T10:00:00.000Z"
+    }
+  ],
+  "subscribers": [],
+  "media": [],
+  "settings": {
+    "siteName": "Expobest",
+    "siteDescription": "Возможности для бизнеса и студентов",
+    "defaultLanguage": "ru",
+    "languages": [
+      "ru",
+      "kk",
+      "en"
+    ],
+    "maintenance": false
+  },
+  "activity": [
+    {
+      "id": 1,
+      "date": "2026-09-18T10:30:00.000Z",
+      "user": "Аян Редактор",
+      "action": "изменил компанию KnewIT"
+    }
+  ],
+  "views": {
+    "companies": {
+      "101": 1
+    },
+    "products": {},
+    "services": {},
+    "students": {},
+    "articles": {}
+  },
+  "roles": [
+    {
+      "id": 1,
+      "name": "Admin"
+    },
+    {
+      "id": 2,
+      "name": "Editor"
+    }
+  ]
+}

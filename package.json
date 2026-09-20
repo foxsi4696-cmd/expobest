@@ -1,0 +1,14 @@
+{
+  "name": "expobest-platform",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.14.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

@@ -1,0 +1,71 @@
+/* ExpoBest Windows 11 Concept Dark Cursors */
+.expo-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2147483647;
+  pointer-events: none !important;
+  user-select: none !important;
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform;
+  transform: translate3d(-100px, -100px, 0);
+  transition: opacity 0.08s ease, visibility 0.08s ease;
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.95))
+          drop-shadow(0 0 6px rgba(255, 255, 255, 0.75))
+          drop-shadow(0 3px 6px rgba(0, 0, 0, 0.45));
+}
+
+.expo-cursor.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.expo-cursor .cursor-icon {
+  display: none;
+  overflow: visible;
+  transition: transform 0.06s ease;
+}
+
+/* Active mode displays corresponding icon */
+.expo-cursor.mode-default .icon-default,
+.expo-cursor.mode-pointer .icon-pointer,
+.expo-cursor.mode-text .icon-text,
+.expo-cursor.mode-wait .icon-wait,
+.expo-cursor.mode-not-allowed .icon-not-allowed,
+.expo-cursor.mode-help .icon-help {
+  display: block;
+}
+
+/* Spinner rotation animation */
+@keyframes win11Spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.expo-cursor .win11-spinner {
+  transform-origin: 14px 14px;
+  animation: win11Spin 0.85s linear infinite;
+}
+
+/* Click press effect */
+.expo-cursor.is-pressed .cursor-icon {
+  transform: scale(0.9);
+}
+
+/* Hide system cursor ONLY when custom cursor is active on the page */
+body.cursor-ready,
+body.cursor-ready * {
+  cursor: none !important;
+}
+
+/* Keep disabled on pure touch mobile devices (phones/tablets without mouse hover) */
+@media (hover: none) and (pointer: coarse) {
+  .expo-cursor {
+    display: none !important;
+  }
+  body.cursor-ready,
+  body.cursor-ready * {
+    cursor: auto !important;
+  }
+}
